@@ -6,10 +6,17 @@ for (let index = 1; index < 100; index++) {
     } else if (index % 5 === 0) {
         scrivi("Buzz");
     } else {
-        scrivi(index);
+        scrivi(`${index}`);
     }
 }
 
 function scrivi(testo) {
-    document.getElementById("container").innerHTML = document.getElementById("container").innerHTML + "<li>"+testo+"</li>"
+    var classe = testo.toLowerCase()
+
+    document
+        .getElementById("container")
+        .innerHTML = document
+        .getElementById("container")
+        .innerHTML + `<li class="${classe}">${testo}</li>`
 }
+

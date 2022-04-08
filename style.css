@@ -1,0 +1,39 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    justify-items: center;
+    list-style: none;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+#container > li {
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    display: block;
+}
+
+#container > li.fizz {
+    background-color: rgb(112, 58, 76);
+}
+
+#container > li.buzz {
+    background-color: rgb(189, 76, 135);
+}
+
+#container > li.fizzbuzz {
+    background-color: pink;
+}
